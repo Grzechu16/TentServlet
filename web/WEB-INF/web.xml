@@ -10,7 +10,7 @@
 
     <servlet>
         <servlet-name>UserQuery</servlet-name>
-        <servlet-class>QueryServlet</servlet-class>
+        <servlet-class>GetTent</servlet-class>
     </servlet>
     <!-- Note: All <servlet> elements MUST be grouped together and
           placed IN FRONT of the <servlet-mapping> elements -->
@@ -18,6 +18,6 @@
 
     <servlet-mapping>
         <servlet-name>UserQuery</servlet-name>
-        <url-pattern>/query</url-pattern>
+        <url-pattern>/GetTent</url-pattern>
     </servlet-mapping>
 </web-app>
