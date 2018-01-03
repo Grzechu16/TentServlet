@@ -55,9 +55,9 @@ public class TentServlet extends HttpServlet {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } finally {
-            out.close();  // Close the output writer
+            out.close();
             try {
-                // Step 5: Close the resources
+
                 if (stmt != null) stmt.close();
                 if (conn != null) conn.close();
             } catch (SQLException ex) {
