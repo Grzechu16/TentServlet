@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e2637099-4a9e-4bbb-b6a7-a43f9cf99e3f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="e2637099-4a9e-4bbb-b6a7-a43f9cf99e3f" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,10 +37,10 @@
       <file leaf-file-name="TentServlet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/TentServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="58" column="17" lean-forward="true" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
               <folding>
-                <marker date="1514928731354" expanded="true" signature="1171:1190" ph="select * fro... Tents" />
+                <marker date="1514999373720" expanded="true" signature="1171:1190" ph="select * fro... Tents" />
               </folding>
             </state>
           </provider>
@@ -77,8 +75,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/TentServlet.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/TentServlet.java" />
       </list>
     </option>
   </component>
@@ -722,12 +720,12 @@
       <option name="presentableId" value="Default" />
       <updated>1514926537174</updated>
       <workItem from="1514926539755" duration="4538000" />
-      <workItem from="1514999007187" duration="344000" />
+      <workItem from="1514999007187" duration="412000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4882000" />
+    <option name="totallyTimeSpent" value="4950000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -817,7 +815,7 @@
         <state relative-caret-position="1037">
           <caret line="61" column="47" lean-forward="true" selection-start-line="61" selection-start-column="47" selection-end-line="61" selection-end-column="47" />
           <folding>
-            <marker date="1514928731354" expanded="true" signature="1171:1190" ph="select * fro... Tents" />
+            <marker date="1514999373720" expanded="true" signature="1171:1190" ph="select * fro... Tents" />
           </folding>
         </state>
       </provider>
@@ -848,10 +846,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TentServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="58" column="17" lean-forward="true" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
           <folding>
-            <marker date="1514928731354" expanded="true" signature="1171:1190" ph="select * fro... Tents" />
+            <marker date="1514999373720" expanded="true" signature="1171:1190" ph="select * fro... Tents" />
           </folding>
         </state>
       </provider>

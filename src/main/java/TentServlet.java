@@ -32,7 +32,7 @@ public class TentServlet extends HttpServlet {
 
             Class.forName("com.mysql.jdbc.Driver");
             conn = DriverManager.getConnection(
-                    "jdbc:mysql://api.dbudziasz.pl/23040354_tent?useSSL=false", "23040354_tent", "-t-Qa5w*G,!F"); // <== Check!
+                    "jdbc:mysql://api.dbudziasz.pl/23040354_tent?useSSL=false", "23040354_tent", "-t-Qa5w*G,!F");
             stmt = conn.createStatement();
 
             String sqlStr = "select * from Tents ";
