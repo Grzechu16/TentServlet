@@ -5,15 +5,13 @@
          version="3.1">
 
     <servlet>
-        <servlet-name>UserQuery</servlet-name>
-        <servlet-class>TentServlet</servlet-class>
+        <servlet-name>Get</servlet-name>
+        <servlet-class>GetTent</servlet-class>
     </servlet>
     <!-- Note: All <servlet> elements MUST be grouped together and
           placed IN FRONT of the <servlet-mapping> elements -->
-
-
     <servlet-mapping>
-        <servlet-name>UserQuery</servlet-name>
+        <servlet-name>Get</servlet-name>
         <url-pattern>/GetTent</url-pattern>
     </servlet-mapping>
 
