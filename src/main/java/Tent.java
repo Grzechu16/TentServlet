@@ -1,12 +1,15 @@
+import com.google.gson.annotations.SerializedName;
 
 /**
  * Created by Gregory on 2017-10-26.
  */
 
 public class Tent  {
-
+    @SerializedName("Title")
     public String Title;
+    @SerializedName("Longitude")
     public String Longitude;
+    @SerializedName("Latitude")
     public String Latitude;
 
     public String getTitle() {

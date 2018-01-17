@@ -1,5 +1,6 @@
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
+import com.sun.xml.internal.bind.v2.TODO;
 import org.codehaus.jackson.map.ObjectMapper;
 
 import javax.servlet.ServletException;
@@ -44,6 +45,7 @@ public class GetTent extends HttpServlet {
             ResultSet rset = stmt.executeQuery(sqlStr);
             List<Tent> Tent = new ArrayList<>();
             //int count = 0;
+
             while (rset.next()) {
 
                 Title = rset.getString("Title");
@@ -78,50 +80,34 @@ public class GetTent extends HttpServlet {
         response.setContentType("application/json");
         PrintWriter out = response.getWriter();
 
+
+        String title = request.getParameter("Title");
+        String longitude = request.getParameter("Longitude");
+        String latitude = request.getParameter("Latitude");
+
         Connection conn = null;
-        List<Tent> tents = new ArrayList<Tent>();
         try {
 
             Class.forName("com.mysql.jdbc.Driver");
             conn = DriverManager.getConnection(
                     "jdbc:mysql://api.dbudziasz.pl/23040354_tent?useSSL=false", "23040354_tent", "-t-Qa5w*G,!F");
-            // 1. get received JSON data from request
-            BufferedReader br = new BufferedReader(new InputStreamReader(request.getInputStream()));
-            String json = "";
-            if (br != null) {
-                json = br.readLine();
-            }
 
-            // 2. initiate jackson mapper
-            ObjectMapper mapper = new ObjectMapper();
-
-            // 3. Convert received JSON to Article
-            Tent tent = mapper.readValue(json, Tent.class);
-
-            // 4. Set response type to JSON
             response.setContentType("application/json");
 
-            // 5. Add article to List<Article>
-            tents.add(tent);
-            for (int i = 0; i < tents.size(); i++) {
+            PreparedStatement preparedStatement = conn.prepareStatement("INSERT INTO Tents (Title, Longitude, Latitude) VALUES (?,?,?)");
+            preparedStatement.setString(1, title);
+            preparedStatement.setString(2, longitude);
+            preparedStatement.setString(3, latitude);
 
+            preparedStatement.executeUpdate();
 
-                // 6. Send List<Article> as JSON to client
-                //mapper.writeValue(response.getOutputStream(), tents);
-
-                PreparedStatement preparedStatement = conn.prepareStatement("INSERT INTO Tents (Title, Longitude, Latitude VALUES (?,?,?)");
-                preparedStatement.setString(1, tents.get(i).getTitle());
-                preparedStatement.setString(2, tents.get(i).getLongitude());
-                preparedStatement.setString(3, tents.get(i).getLatitude());
-
-                preparedStatement.executeUpdate();
-            }
 
         } catch (SQLException ex) {
             ex.printStackTrace();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } finally {
+            //TODO unsupress it!
             out.close();
             try {
                 if (conn != null) conn.close();
