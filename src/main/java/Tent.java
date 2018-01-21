@@ -36,9 +36,7 @@ public class Tent  {
         Latitude = latitude;
     }
 
-    public Tent() {
-
-    }
+    public Tent() {}
 
     public Tent(String title, String longitude, String latitude) {
         Title = title;
